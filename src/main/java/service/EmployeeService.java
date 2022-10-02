@@ -1,25 +1,20 @@
 package service;
 
 import model.Employee;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 public interface EmployeeService {
-    //    @Override
-    //    public boolean remove(String firstName, String lastName) {
-    //        Employee employee = new Employee(firstName, lastName);
-    //        if (employees.contains(employee)) {
-    //            return true;
-    //        }
-    //        throw new EmployeeNotFoundException("Сотрудник не найден");
-    //    }
-    boolean completeCollection();
-//    boolean add(String firstName, String lastName);
-//
-//    boolean remove(String firstName, String lastName);
-//
-//    Employee find(String firstName, String lastName);
+    public boolean add(String firstName, String lastName);
 
+    public boolean remove(String firstName, String lastName);
 
-//    List<Employee> findAll();
+    public Employee find(String firstName, String lastName);
 
+    public boolean completeCollection();
+
+    public List<Employee> findAll();
+
+    String welcome();
 }
